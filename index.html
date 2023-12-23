@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WEB GV</title>
+    <!-- Añade la siguiente línea para el favicon -->
+  <link rel="icon" href="GVELOX-LOGO-sinfondo3d-colorp-favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body, html {
+      min-height: 100%;
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; 
+      z-index: -1;
+    }
+
+    .container h1, .container h2, .container .logo, .container a {
+      z-index: 2;
+    } 
+
+    .btn-custom {
+      background-color: #561212; 
+      color: white;
+      margin: 5px; 
+      transition: all 0.5s;
+      font-size: 2vh;
+    }
+
+    .btn-custom:hover {
+      transform: scale(1.2); 
+      background-color: #e76d6d; 
+      color: white; 
+    }
+
+    .btn-custom:active {
+      transform: scale(1);
+      background-color: #561212; 
+    }
+
+    h1 {
+      color: rgb(192, 15, 15);
+	  -webkit-text-stroke: 1px white; /* Ancho y color del borde para WebKit (Chrome, Safari, etc.) */
+    text-stroke: 1px white; /* Ancho y color del borde para navegadores que admiten la propiedad text-stroke */
+      font-size: 5vh;
+    }
+
+    h2 {
+      color: #e76d6d;
+      font-size: 2vh;
+    }
+	
+	b {
+      color: #00FFFF;
+      font-size: 2vh;
+    }
+
+    body {
+      /* Establecer la imagen de fondo y configurar el tamaño y repetición */
+      background-image: url('/espacio-estrellas.jpg');
+      background-size: cover; /* Cubre toda la pantalla */
+      background-repeat: repeat;
+      /* Centrar el contenido en la página */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* Ajustar otros estilos según sea necesario */
+      color: #ffffff; /* Color del texto, por ejemplo, blanco */
+    }
+
+.btn {
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #561212;
+  color: rgb(234, 234, 234);
+  font-weight: 700;
+  transition: 0.6s;
+  box-shadow: 0px 0px 60px #1f4c65;
+  -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+}
+
+.btn:active {
+  scale: 0.72;
+}
+
+.btn:hover {
+  background: rgb(2,29,78);
+  background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, #e76d6d 60%);
+  color: rgb(4, 4, 38);
+}
+
+
+.shadow__btn {
+  padding: 10px 20px;
+  border: none;
+  font-size: 11px;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+}
+
+.shadow__btn {
+  background: rgb(0,140,255);
+  box-shadow: 0 0 25px rgb(0,140,255);
+}
+
+.shadow__btn:hover {
+  box-shadow: 0 0 5px rgb(0,140,255),
+              0 0 25px rgb(0,140,255),
+              0 0 50px rgb(0,140,255),
+              0 0 100px rgb(0,140,255);
+}
+
+  </style>
+</head>
+<body>
+
+<!--<video autoplay muted loop id="myVideo" class="video-bg">
+  <source src="/VideoFondo.mp4" type="video/mp4">
+  Tu navegador no soporta videos HTML5.
+</video>-->
+
+<div class="overlay"></div>
+
+<div class="centered-container">
+  <div class="container text-center">
+    <p></br></br></p>
+    <div class="logo">
+      <img id="imagenLogo" src="/GVELOX-LOGO-sinfondo3d-colorp.png" height="280">
+    </div>
+	<h1>¡Bienvenido a GVELOX!</h1>
+    <p></br>En nuestra plataforma, descubrirás cómo la tecnología está transformando la forma en que vivimos y disfrutamos el mundo del deporte.</br></br>
+	Te mantenemos conectado con lo mejor de ambos mundos. Únete a nuestra comunidad, donde la tecnología se encuentra con la pasión por el deporte. ¡En GVELOX, la emoción y la innovación están a solo un clic de distancia!</br></br>
+	</br></p>
+    <!-- <p>(El Dash no es compatible con Apple)</br></p> -->
+	<a href="https://gvelox.wixsite.com/gvelox/gvworld" class="btn btn-custom">GV WORLD</a>
+  <a href="/web/quienessomos.html" class="btn btn-custom">QUIENES SOMOS</a>
+	<a href="https://kuma.gvelox.info/status/gv" class="btn btn-custom">KUMA UPTIME</a>
+	<a href="https://pug-willing-hen.ngrok-free.app/videojs/tv.html" class="btn btn-custom">*TV GV</a>
+	<a href="https://amusing-closely-chow.ngrok-free.app/videojs/tv1.html" class="btn btn-custom">*TV1 GV</a>
+	
+	<p></br></br></br>*Si en los enlaces de TV, os sale una pantalla de ngrok, clickad en <button class="shadow__btn">Visit Site</button></p>
+	
+  </div>
+  <!--<iframe width="1280" height="720" src="https://tv1.gvelox.info/videojs/index.html" frameborder="0" allowfullscreen></iframe>-->
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
